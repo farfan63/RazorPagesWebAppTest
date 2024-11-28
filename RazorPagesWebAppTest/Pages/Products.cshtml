@@ -30,7 +30,7 @@
 </table>
 
 <div>
-    <button @(Model.PageIndex == 1 ? "disabled" : "") asp-route-pageIndex="@(Model.PageIndex - 1)">Previous</button>
+    <button>Previous</button>
     <span>Page @Model.PageIndex of @Model.TotalPages</span>
-    <button @(Model.PageIndex == Model.TotalPages ? "disabled" : "") asp-route-pageIndex="@(Model.PageIndex + 1)">Next</button>
+    <button>Next</button>
 </div>
